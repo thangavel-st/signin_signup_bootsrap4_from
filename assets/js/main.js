@@ -1,0 +1,21 @@
+$(document).ready(function(){
+	$('#forget-btn').click(function(){
+		$("#login_box").hide();
+		$("#forget_box").show();
+	});
+	$("#register_here_btn").click(function(){
+		$("#login_box").hide();
+		$("#register_box").show();
+	});
+	$("#forget_back").click(function(){
+		$("#forget_box").hide();
+		$("#register_box").show();
+	});
+	$("#login_btn").click(function(){
+		$("#register_box").hide();
+		$("#login_box").show();
+	});
+	$("#login-frm").validate();
+	$("#register-frm").validate();
+	$("#reset-password-frm").validate();
+});

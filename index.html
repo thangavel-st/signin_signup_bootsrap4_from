@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>bootstrap 4 From</title>
+    <!-- bootstrap 4 CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+    <!-- // bootstrap 4 CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+  <body class="bg-dark">
+    <div class="container pt-5">
+      <!-- Login form -->
+      <div class="row" id="login_box">
+        <div class="col-lg-5 mx-auto">
+          <div class="bg-white rounded p-4">
+            <form method="post" id="login-frm" action="index.php">
+              <div><h3 class="pb-3">Login</h3></div>
+              <div class="form-group">
+                <lable for="semail">Email</lable>
+                <input
+                  type="email"
+                  name="semail"
+                  id="semail"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <lable for="spass">Password</lable>
+                <input
+                  type="password"
+                  name="spass"
+                  id="spass"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="gridCheck"
+                  />
+                  <label class="form-check-label" for="gridCheck">
+                    Remeber me
+                  </label>
+                  <a href="#" id="forget-btn" class="float-right"
+                    >Forget Password</a
+                  >
+                </div>
+              </div>
+              <div class="form-group mt-4">
+                <input
+                  type="submit"
+                  name="login"
+                  id="login"
+                  value="Login"
+                  class="btn btn-primary btn-block"
+                />
+              </div>
+              <div class="form-group">
+                <p class="text-center">
+                  New user? <a href="#" id="register_here_btn">Register Here</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Register form -->
+      <div class="row" id="register_box">
+        <div class="col-lg-5 mx-auto">
+          <div class="bg-white rounded p-4">
+            <form method="post" id="register-frm" action="index.php">
+              <div><h3 class="pb-3">Register</h3></div>
+              <div class="form-group">
+                <lable for="sname">Name</lable>
+                <input
+                  type="text"
+                  name="sname"
+                  id="sname"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <lable for="semailid">Email</lable>
+                <input
+                  type="email"
+                  name="semailid"
+                  id="semailid"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <lable for="smobile">Mobile</lable>
+                <input
+                  type="text"
+                  name="smobile"
+                  id="smobile"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <lable for="spassword">Password</lable>
+                <input
+                  type="password"
+                  name="spassword"
+                  id="spassword"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <lable for="scpassword">Confirm Password</lable>
+                <input
+                  type="password"
+                  name="scpassword"
+                  id="scpassword"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="gridCheck"
+                  />
+                  <label class="form-check-label" for="gridCheck">
+                    I agree terms and conditions
+                  </label>
+                </div>
+              </div>
+              <div class="form-group mt-4">
+                <input
+                  type="submit"
+                  name="register"
+                  id="register"
+                  value="Register"
+                  class="btn btn-primary btn-block"
+                />
+              </div>
+              <div class="form-group">
+                <p class="text-center">
+                  Already Register? <a href="#" id="login_btn">Login</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Forget Password -->
+      <div class="row" id="forget_box">
+        <div class="col-lg-5 mx-auto">
+          <div class="bg-white rounded p-4">
+            <form method="post" id="reset-password-frm">
+              <div><h3 class="pb-3">Reset password</h3></div>
+              <div class="form-group">
+                <lable for="semailid">Email</lable>
+                <input
+                  type="email"
+                  name="semailid"
+                  id="semailid"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group mt-4">
+                <input
+                  type="submit"
+                  name="register"
+                  id="register"
+                  value="Reset Password"
+                  class="btn btn-primary btn-block"
+                />
+              </div>
+              <div class="form-group">
+                <p><a href="#" id="forget_back">Back</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
